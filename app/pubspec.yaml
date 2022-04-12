@@ -1,0 +1,30 @@
+name: app
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.4
+  firebase_core: ^1.14.0
+  firebase_auth: ^3.3.13
+  flutterfire_ui: ^0.4.0+1
+  google_sign_in: ^5.2.4
+  cbl: ^1.1.2
+  cbl_flutter: ^1.0.0+2
+  cbl_flutter_ee: ^1.1.1
+  rxdart: ^0.27.3
+  provider: ^6.0.2
+  path_provider: ^2.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true

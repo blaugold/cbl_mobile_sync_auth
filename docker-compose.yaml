@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  couchbase-server:
+    image: couchbase:community
+    ports:
+      - '8091:8091'
+  sync-gateway:
+    image: couchbase/sync-gateway:3.0.3-community
+    command: ['/etc/sync-gateway-config.json']
+    ports:
+      - '4984:4984'
+      - '4985:4985'
+    volumes:
+      - './sync-gateway-config.json:/etc/sync-gateway-config.json'

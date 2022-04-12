@@ -1,0 +1,19 @@
+{
+  "logging": {
+    "console": {
+      "enabled": true,
+      "log_level": "info",
+      "log_keys": ["*"],
+      "color_enabled": true
+    }
+  },
+  "bootstrap": {
+    "server": "couchbase://couchbase-server",
+    "use_tls_server": false,
+    "username": "sg",
+    "password": "password"
+  },
+  "api": {
+    "admin_interface": ":4985"
+  }
+}
